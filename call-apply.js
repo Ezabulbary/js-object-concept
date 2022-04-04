@@ -13,7 +13,6 @@ const salman = {
     name: 'salman',
     money: 6000,
 };
+console.log(Hasan.treatDey.call(Hasan, 200));
 
-console.log(Hasan.treatDey(200));
-const salmanTratDay = Hasan.treatDey.bind(salman);
-console.log(salmanTratDay(700));
+console.log(Hasan.treatDey.apply(salman, [900]));
